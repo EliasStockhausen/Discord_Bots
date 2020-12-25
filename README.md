@@ -1,2 +1,3 @@
-# Discord_Bots
-Discord Bots
+# Discord Bots
+A collection of my Discord Bots
+(still learning)
