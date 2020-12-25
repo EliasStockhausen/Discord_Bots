@@ -25,7 +25,7 @@ async def on_ready():
     print(f'{bot.user.name} has connected to Discord!')
 
 
-@bot.command(name='cleanup')
+@bot.command(name='cleanup', help='Removes all unpinned messages')
 async def clean(ctx):
     channel = ctx.channel
     messages = await channel.history(limit=500).flatten()
