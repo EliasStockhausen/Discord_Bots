@@ -1,0 +1,3 @@
+discord~=1.0.1
+python-dotenv~=0.15.0
+mvg-api~=1.2.7

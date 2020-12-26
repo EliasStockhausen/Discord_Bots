@@ -3,10 +3,10 @@ import os
 import logging
 
 import discord
-
 from discord.ext import commands
-
 from dotenv import load_dotenv
+
+from sbahn import sbahn
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger('CleanBot')
@@ -35,5 +35,16 @@ async def clean(ctx):
         if not msg.pinned:
             logger.info(f'Deleting Message')
             await msg.delete()
+
+#departures = sbahn.departure_eching()
+#
+#for departure in departures:
+#    departure.line       # line
+#    departure.to         # direction
+#    departure.at         # leaves at
+#    departure.minutes    # leaves in ...
+#    departure.is_delayed # True/False
+#    departure.delay      # in minutes
+#
 
 bot.run(TOKEN)
